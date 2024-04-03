@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05</title>
+</head>
+<body>
+    <h2 class="center">Trabalhando com vídeos</h2>
+    <br>
+
+    <p>Trabalhar com vídeos é um caso mais complexo, devido ao formato dos vídeos não serem aceitos dependendo do navegador.</p>
+    <p>Devido a isso, trabalhamos de uma forma diferente.</p>
+    <br>
+    <p>Abrimos uma tag &lt;video&gt;&lt;/video&gt;</p>
+
+    <section class="code">
+        <pre><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title>Document&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;video&gt;
+
+                &lt;/video&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code></pre>
+    </section>
+
+    <p>Dentro dela, temos uma segunda tag, que recebe os videos. &lt;source&gt;</p>
+    <p>Devido ao problema antes mesionado, criamos mais de uma tag source</p>
+
+    <section class="code">
+        <pre><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title>Document&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;video&gt;
+                &lt;source src="caminho do video" type="video/formato do video"&gt;
+                &lt;/video&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code></pre>
+    </section>
+    <br>
+
+    <p>A tag source recebe dois atibutos, sendo o <strong>src=""</strong> que indica o caminho do nosso vídeo</p>
+    <p>Além da tag type="", que recebe sempre o atributo "<strong>video/</strong>" sendo completado pelo tipo do video. Segue exemplos:</p>
+    <br>
+
+    <section class="code">
+        <pre><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title>Document&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;video&gt;
+                &lt;source src="caminho do video" type="video/mp4"&gt;
+                &lt;source src="caminho do video" type="video/ogg"&gt;
+                &lt;source src="caminho do video" type="video/webm"&gt;
+                &lt;/video&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code></pre>
+    </section>
+    <br>
+
+    <p>Fazendo assim, o navegador irá apenas reproduzir o tipo de video que ele suporta, sem repetir claro. Um adendo é de que, essas três extenções de arquivos, são as 3 mais usadas em navegadores</p>
+    <br>
+
+    <p>Outro ponto é de que, A tag &lt;video&gt; pode receber alguns atributos, como um poster, ou atributos de reprodução, exemplificando:</p>
+    <br>
+    <section class="code">
+        <pre><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title>Document&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;video poster="caminho da imagem" autoplay&gt;
+                &lt;source src="caminho do video" type="video/mp4"&gt;
+                &lt;source src="caminho do video" type="video/ogg"&gt;
+                &lt;source src="caminho do video" type="video/webm"&gt;
+                &lt;p&gt;Formato de vídeo inválido para o navegador&lt;/p&gt;
+                &lt;/video&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code></pre>
+    </section>
+
+    <p>O Poster é uma imagem estática antes do video ser reproduzido, e o autoplay faz com que ele comece a ser reproduzido automaticamente.</p>
+    <p>Para finalizar, podemos colocar uma escrita, caso nenhum dos vídeos for aceitado pelo navegador.</p>
+
+</body>
+</html>

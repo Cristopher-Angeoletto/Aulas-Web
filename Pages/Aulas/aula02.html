@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h2 class="center">Aula 02-Trabalhando com Parágrafos e Imagens</h2>
+
+    <p>Na aula anterior, aprendemos a criar um arquivo html base e todas suas tags, agora vamos para a utilização de parágrafos,
+       além de como adicionar imagens ao seu código, junto com algumas outras tags e artifícios do html.
+    </p>
+
+    <br>
+
+    <h3>Começando com a tag &lt;p&gt;</h3>
+    <p>ela é responsagem pela criação de parágrafos, podendo se escrever qualquer coisa em seu interior, segue exemplo de código:</p>
+
+    <section class="code">
+        <pre><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title>Document&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;p&gt;Dentro desta tag p, podemos escrever qualquer texto, todavia,
+                        independende da sua formatação, o texto sempre aparecerá em forma de linha única. Teste e Veja.
+                &lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code></pre>
+    </section>
+
+    <p>Com isto em mente, como fazemos caso queiramos quebrar alguma linha, ou até mesmo, modificar a fonte ou estiliza-la.</p>
+    <p>Existem algumas maneiras para isso, mas, por hora, mostrarei alguns métodos sem entrar no mérito de utilizar css.</p>
+    <br>
+
+    <div class="tab">
+        <h4>Começando com o &lt;br&gt;</h4>
+        <p>ela significa break row, se você entende ingles, quebrar linha, e ela faz exatamente isso, quebra uma linha no seu parágrafo</p>
+
+        <br>
+        <section class="code">
+            <pre><code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="en"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;title>Document&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;p&gt;Dentro desta tag p, podemos escrever qualquer texto, todavia, &lt;br&gt;
+                            independende da sua formatação, o texto sempre aparecerá em forma de linha única. Teste e Veja.
+                    &lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </code></pre>
+        </section>
+
+        <br>
+        <p>
+           Nesse caso, teste e verá que houve uma quebra de linha, no seu texto. Se você estiver testando, provavelmente notou que não
+           é possivel escrever uma tag em seu parágrafo, então, como fazemos isso?
+        </p>
+        <br>
+
+        <h4>Simples, utilize &;.</h4>
+        <p>
+            o & nos permite fazer algumas combinações, como & l t;(fiz separado mas faça junto), significa greater than, ou seja maior que,
+            com isso conseguimos um "&lt;", se você possue pelo menos dois neurônios, você já entendeu como faz uma tag, e lembre-se,
+            existem diversas combinações para o &, se quiser ver todas, esvcreva & <strong>ctrl + espaço</strong> e tenha uma lista delas,
+            podendo navegar pelo seletar pelas setas do seu teclado.
+        </p>
+
+        <br>
+
+        <h4>Vamos agora para o &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;.</h4>
+        <p>Todas estas tags, sem si, tem a mesma função, criar um título, subtítulo e assim por diante, em exemplo, os títulos que
+            estou utilizando para nomear as tags nesse site, são utilizando destas tags.
+        </p>
+
+        <br>
+
+        <div class="tab">
+            <h1>Este é o &lt;h1&gt;</h1>
+            <h2>Este é o &lt;h2&gt;</h2>
+            <h3>Este é o &lt;h3&gt;</h3>
+            <h4>Este é o &lt;h4&gt;</h4>
+            <h5>Este é o &lt;h5&gt;</h5>
+            <h6>Este é o &lt;h6&gt;</h6>
+        </div>
+    </div>
+
+    <br>
+
+    <h3>Agora vamos para algumas tags de formatoções textual:</h3>
+    <br>
+    <div class="tab">
+        <p>Começando com a tag <strong>&lt;strong&gt;&lt;/strong&gt;</strong></p>
+        <p>Sua função é deixar o texto em negrito, semânticamente falando, mais forte/aparente.</p>
+
+        <br>
+
+        <p>Agora temos a tag <em>&lt;em&gt;&lt;/em&gt;</em></p>
+        <p>Ela faz seu texto ficar em itálico.</p>
+
+        <br>
+
+        <p>Outra tag é a <mark>&lt;mark&gt;&lt;/mark&gt;</mark></p>
+        <p>Fazendo seu texto ficar Grifado, de sua semântica traduzindo do ingles, marker(marca-texto).</p>
+
+        <br>
+
+        <p>Esta tag você provavelmente já viu ao ler um artigo de lei, a tag <del>&lt;del&gt;&lt;/del&gt;</del></p>
+        <p>Ela faz a representação de algo que foi deletado de seu texto.</p>
+
+        <br>
+
+        <p>Uma tag complementar a anterior é a <ins>&lt;ins&gt;&lt;/ins&gt;</ins></p>
+        <p>ela faz a determinação de algo que foi inserido ao texto. Sublinhando-o</p>
+        <p>Uma curiosidade desta tag, é que ela é nova do html5, substituindo a tag &lt;u&gt;&lt;/u&gt;, de underscore, fazendo a mesma função</p>
+        
+        <br>
+
+        <p>Temos duas tags complementares agora, sendo a 1<sub>&lt;sub&gt;&lt;/sub&gt;</sub></p>
+        <p>que faz algo ficar subescrito;</p>
+
+        <br>
+
+        <p>Junto dela temos a 2<sup>&lt;sup&gt;&lt;/sup&gt;</sup></p>
+        <p>que faz algo ficar sobre-escrito, ou elevado.</p>
+
+        <br>
+
+        <h4>Temos agora a &lt;blockquote&gt;&lt;/blockquote&gt;</h4>
+        <blockquote><p>Faz com que possamos fazer longas citações em um texto.</p></blockquote>
+
+        <br>
+
+        <h4>Outra tag, é a <abbr title="Basicamente au deixar o mause encima da palavra, vêmos sua versão não abreviada">&lt;abbr&gt;&lt;/abbr&gt;</abbr></h4>
+
+        <p>Finalizando as tags de formatação textual, temos a mais inútil, &lt;bdo&gt;&lt;/bdo&gt;</p>
+        <bdo dir="rtl">Ela faz seu texto ficar invertido, boa sorte para lêr isto, hehe.</bdo>
+    </div>
+
+    <br>
+
+    <h3>Para finalizar, duas tags bônus que não se enquadram em semântica, mas esta dentro do tema</h3>
+    <p>a tag &lt;code&gt;&lt;/code&gt;</p>
+    <p>Ela faz com que você possa criar um texto de código, todavia, ela não mantém a formatação, devido a isso, em muitos pontos ela é usado junto de uma segunda tag, a &lt;pre&gt;&lt;/pre&gt;, que mantéma  formatação do seu texto.</p>
+    
+    <br>
+
+    <h3>Finalizando esta aula, uma coisa simplês, como adicionar imagens:</h3>
+    <br>
+    <p>É Simples na verdade, usamos a tag &lt;img&gt; e nela recebe o source, src, o caminho da sua imagem, segue o exemplo:</p>
+    <section class="code">
+        <pre><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title>Document&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;img src="caminho da sua imagem"&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code></pre>
+    </section>
+</body>
+</html>

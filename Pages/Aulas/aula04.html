@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04</title>
+</head>
+<body>
+    <h2 class="center">Aula 04-Como trabalhar com links</h2>
+    <br>
+
+    <p>Trabalhar com linsk é a coisa mais simples do mundo, primeiramente, precisamos criar nosso link, usando a tag &lt;a&gt;&lt;/a&gt;</p>
+    <br>
+    <p>Essa tag de link, recebe uma característica, que é o "<strong>href=""</strong>"</p>
+    <p>No href, você coloca o link que deseja, além de escrever qualquer coisa dentro do link</p>
+
+    <section class="code">
+        <pre><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title>Document&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;a href="link"&gt;Meu Link&lt;/a&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code></pre>
+    </section>
+    <br>
+
+    <p>A tag link, não recebe apenas o href como atributo, nele, também temos o "<strong>hreflang=""</strong></p>
+    <p>Se você já interpretou, o hreflang diz a linguagem do site que você esta acessando para o navegor, facilitando a tradução automática</p>
+    <br>
+
+    <section class="code">
+        <pre><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title>Document&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;a href="link" hreflang="pt-br"&gt;Meu Link&lt;/a&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code></pre>
+    </section>
+    <br>
+
+    <p>Agora para finalizar, temos o <strong>target=""</strong></p>
+    <p>Ele indica o "alvo" do nosso link, podendo ser "_self" ou "_blank"</p>
+    <br>
+    <p>No Target _self, você indica que a página a ser acessada é na mesma janela do seu site</p>
+    <br>
+    <section class="code">
+        <pre><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title>Document&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;a href="link" hreflang="pt-br" target="_self"&gt;Meu Link&lt;/a&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code></pre>
+    </section>
+    <br>
+
+    <p>Já no target="_blank", o link a ser acessado é em uma guia em branco</p>
+    <br>
+    <section class="code">
+        <pre><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title>Document&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;a href="link" hreflang="pt-br" target="_blank"&gt;Meu Link&lt;/a&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code></pre>
+    </section>
+    <br>
+    <p>Lembrando, o seu link pode ser em sites externos, ou dentro de sua aplicação.</p>
+</body>
+</html>

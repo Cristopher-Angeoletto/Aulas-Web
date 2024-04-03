@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Aula 03</title>
+    <style>
+        ol, ul, li{
+            color: #f2f2f2;
+        }
+
+        section.flex{
+            position: relative;
+        }
+
+        .flex-container {
+            display: flex;
+        }
+
+        .flex-container ol, ul {
+            margin: 0 50px; 
+        }
+    </style>
+</head>
+<body>
+    <h2 class="center">Aula 03-Trabalhando com listas</h2>
+    <br>
+    <p>
+       Tratamento de listas, nela existem dois tipos, &lt;ol&gt; que faz uma lista ordenada,
+      <strong>Ordened list</strong> , ou seja, a ordem dos item importa.
+    </p>
+
+    <br>
+
+    <p>Para organizar os items dentro desta lista, utilizamos &lt;li&gt;, que significa <strong>Item List</strong></p>
+    <p>segue o exemplo:</p>
+    <br>
+    <div class="tab">
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+    </div>
+
+    <br>
+
+    
+    <p>
+        Ainda nas listas ordenadas, existem diversos <strong>"types"</strong> para ela, que modifica o "deterministico dos itens",
+        exemplos: 1, I, i, A, a. Respectivamente:
+    </p>
+
+    <section class="flex-container">
+        <ol type="1">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+        <ol type="I">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+        <ol type="i">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+        <ol type="A">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+        <ol type="a">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+    </section>
+
+    <br>
+
+    <p>
+        Por brinde, também é possivel determinar de onde a lista inicia-se, como <strong>"start"</strong>.
+        Segue o Exemplo:
+    </p>
+
+    <section class="flex-container">
+        <ol type="1" start="3">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+
+        <ol type="I" start="6">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+
+        <ol type="i" start="9">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+
+        <ol type="A" start="12">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+
+        <ol type="a" start="15">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </section>
+    <br>
+
+    <p>
+        Também existe outro tipo de lista, que são as não ordenadas, onde a ordem dos fatores não fazem diferença,
+        utiliza da tag &lt;ul&gt;, e para determinar os item, não existe diferença da anterior.
+    </p>
+    <br>
+    <div class="tab">
+        <ul>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+        </ul>
+    </div>
+    <br>
+    <p>
+        Como é possivel reparar, diferente das ordenadas, as listar não ordenadas, tem seus items representador por uma
+        bolinha totalmente preenchida, mas como no anteiror, também pode ser alterada pelo type, segue exemplos:
+    </p>
+    <br>
+
+    <p>Respectivamente: disc, circle, square, none.</p>
+
+    <br>
+
+    <section class="flex-container">
+        <ul type="disc">
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+        </ul>
+
+        <ul type="circle">
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+        </ul>
+
+        <ul type="square">
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+        </ul>
+
+        <ul type="none">
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+        </ul>
+    </section>
+
+    <br>
+
+    <p>E um ultimo adendo, é possivel concatenar as listas, não se limitando ao mesmo tipo</p>
+    <br>
+    <div class="tab">
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>
+                <ol>
+                    <li>item 2.2</li>
+                    <li>item 2.3</li>
+                    <li>item 2.4</li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
